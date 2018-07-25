@@ -15,11 +15,11 @@ A class variable or instance variable that holds data associated with a class an
 Method − A special kind of function that is defined in a class definition.
 
 Class variable:
- A variable that is shared by all instances of a class. Class variables are defined within a class but outside any of the class's methods.
- Class variables are not used as frequently as instance variables are.
+ A variable that is shared by all instances of a class. Class variables are defined within a class but outside any of the class's methods. Class variables are not used as frequently as instance variables are Since the OOPs princeples encourage data encapsulation usually the class variables are accessed by using get and set methods.
  
-Private Attribute:
-An identifier starting with two underscores inside a class, is private member.
+Private Attributes:
+An attribute starting with one underscores inside a class is private attribute(a class variable, instance variable and an instance method can be made private), Remember that in python nothing is private, but is a convention to use underscore for private members so that coders dont access the attribute directly and implement appropirate methods to access the private attributes,
+NOTE: when an attribute is preceeded with double underscores, it is not  convention; it has a specific meaning to the interpreter.The double underscore before an attribute name makes the interpreter to add class name before the attribute, This isused to avoid name clashes when the same name is used in other classes and sub classess.
 
 
 Instance variable :
@@ -136,11 +136,13 @@ A module may contain, classes, properties or functions any of these or all of th
 Where as a class is Python code inside a module.
  
  Pillars of OOPS:
-  
- Abstraction
- 
- Encapsulation
- 
- Inheritance
+   
+Encapsulation & Abstraction:
+----------------------------
+The terms encapsulation and data abstraction are often interchangeable.Actually, the data abstraction is achieved through encapsulation.
+Encapsulation in general, is a mechanism,to restrict the direct access of some of objects attributes. That is, to hide internal implementation of an object, from outside its definition.Typically access to attributes is only allowed, through setters and getters methods.
+
+Inheritance:
+------------
  
  Polymorphism
